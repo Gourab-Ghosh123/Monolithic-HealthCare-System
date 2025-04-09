@@ -8,4 +8,12 @@ urlpatterns = [
     path('activate/<uidb64>/<token>', views.activate, name='activate'),
     path('signin', views.signin, name='signin'),
     path('signout', views.signout, name='signout'),
+
+
+    path('features', views.features, name='features'),
+    path('ContactUs', views.ContactUs, name='ContactUs'),
+    path('HealthAndSafety', views.HealthAndSafety, name='HealthAndSafety'),
+    path('Donation', views.Donation, name='Donation'),
+    path('LegalAndPolicyServices', views.LegalAndPolicyServices, name='LegalAndPolicyServices'),
+    
 ]

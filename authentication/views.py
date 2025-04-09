@@ -13,6 +13,7 @@ from . tokens import generate_token
 
 # Create your views here.
 def home(request):
+
     return render(request, "authentication/index.html")
 
 def signup(request):
@@ -125,3 +126,27 @@ def signout(request):
     logout(request)
     messages.success(request, "Logged Out Successfully!!")
     return redirect('home')
+
+
+
+
+
+def features(request):
+    return render(request , "authentication/features.html")
+
+def ContactUs(request):
+    return render(request , "authentication/ContactUs.html" )
+
+
+def HealthAndSafety(request):
+    return render(request , "authentication/HealthAndSafety.html" )
+
+
+
+def Donation(request):
+    return render(request , "authentication/Donation.html" )
+
+
+
+def LegalAndPolicyServices(request):
+    return render(request , "authentication/LegalAndPolicyServices.html" )
