@@ -143,8 +143,8 @@ def HealthAndSafety(request):
 
 
 
-def Donation(request):
-    return render(request , "authentication/Donation.html" )
+def DiseasesRisks(request):
+    return render(request , "authentication/DiseasesRisks.html" )
 
 
 
